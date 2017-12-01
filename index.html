@@ -6,69 +6,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-
-  <link rel="stylesheet" href="css/animate.css"><link href="./multiple.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
 
   <title>Approachable Sustainability</title>
 </head>
 
 <body>
-
+<div class="container-fluid">
  <div id="fullScreenDiv">
         <img src="images/leaf.jpg" id="videosubstitute" alt="Full screen background video">
         <div id="videoDiv">           
             <video preload="preload" id="video" autoplay="autoplay" loop="loop">
-  <!--           <source src="video/t12.webm" type="video/webm"></source> -->
+
             <source src="images/leaf.mp4" type="video/mp4"></source>
             </video> 
         </div>
         <div id="messageBox"> 
             <div>
-                <h1><strong>It can be easy being green.</strong></h1>
-                <h2>Small changes in behavior can make a big impact.</h2>
-                <h3><a href="#difference" class="scrolly">Read below</a></h3>
+                <h1 class="text-shadow text-center"><strong>It can be easy being green.</strong></h1>
+                <h2 class="text-shadow">Small changes in behavior can make a big impact.</h2>
+                <!-- <h3 class="text-center"><a href="#1" class="scrolly">Read below</a></h3> -->
             </div>
         </div>   
     </div>
-
-<!-- 	<div class="text-center mx-auto">
-		<h1>It can be easy being green</h1>
-		<p class="lead">Small changes in behavior can have a big impacy on our planet</p>
-	</div> -->
-
+ </div>   
 
 
 <div class="container">
-	<div id="facts">
-		<img class="img-fluid">
-	</div><!-- carousel --> 
+<!-- Fast Facts -->
+	<div class="row">
+		<div id="1" class="col-sm-4 facts text-center" data-aos="fade-up">
+			<img id="flag" class="img-responsive" src="images/flag.gif">
+			<p class="facts pad">#1 trash-producing country</p>
+		</div>
+		<div class="col-sm-4 facts text-center" data-aos="fade-up">
+			<p class="facts"><span class="counter highlight">254,000,000</span><br></p>
+			<p class="facts">tons of trash that Americans generate in a year</p>
+		
+		</div data-aos="fade-up">
+		<div class="col-sm-4 facts text-center" data-aos="fade-up">
+			<img class="earth" src="images/earth.png" data-aos="fade-left">
+			<img class="earth" src="images/earth.png" data-aos="fade-left">
+			<img class="earth" src="images/earth.png" data-aos="fade-left">
+			<img class="earth" src="images/earth.png" data-aos="fade-left">
+			<p class="facts text-center pad"># of earths we'd need if everyone consumed like Americans</p>
+		</div>
+	</div>
+
 
 <!-- Section: Make a difference -->
-	<div class="col mx-auto" id="difference">
-		<h2>How can I make a difference? Would it even matter? </h2>	
-		<p>You CAN make a difference that can change the world if we band together. Not everyone is ready start a compost pile in their backyard but we have a quick pointers that you could start using today.</p>
+	<div class="row">
+		<div class="col mx-auto">
+			<div class="jumbotron" id="difference">
+				<h2>How can I make a difference? Would it even matter? </h2>	
+				<p>You CAN make a difference that can change the world if we band together. Not everyone is ready start a compost pile in their backyard but we have a quick pointers that you could start using today.</p>
+			</div>
+		</div>
 	</div><!-- difference -->
 
+<!-- Categories and Info Section-->
+	<div class="row two-col">
 <!-- Left Section: Categories -->
-	<div class="row">
-		<div id="categories" class="col-sm-6 categories">
-			<div class="food-waste category">
+		<div id="categories" class="col-sm-6 categories" data-aos="fade-right">
+			<div class="food-waste category" >
 				<h4>Preventing food waste</h4>
 				<button data-rel="produce">Lasting produce</button>
 				<button data-rel="save">Food in sight</button>
-				<button data-rel="expiration">Question expirations</button>
+				<button data-rel="expiration" >Question expirations</button>
 			</div>
 
 			<div class="reduce category">
-				<h4>Reduce use</h4>
+				<h4 >Reduce use</h4>
 				<button data-rel="paper-towels">Paper towels</button>
-				<button data-rel="straws">Straws suck</button>
-				<button data-rel="bags">Plastic bags</button>
-				<button data-rel="bottles">Single-use bottles</button>
+				<button data-rel="straws" >Straws suck</button>
+				<button data-rel="bags" >Plastic bags</button>
+				<button data-rel="bottles" >Single-use bottles</button>
 			</div>
 			
-			<div class="buy category">
+			<div  class="buy category">
 				<h4>Buy this not that</h4>
 				<button data-rel="vintage">Vintage over new</button>
 				<button data-rel="shipping">No rush shipping</button>
@@ -80,23 +97,23 @@
 
 <!-- Right Section: Details -->
 		<div id="details" class="col-sm-6">
-			<div class="tip produce">
-				<p><strong><span class="counter">60,000,000 </span><span> tons</span></strong><br>(or $160 billion worth) of produce is thrown away in the United States annually.</p>
+			<div class="tip produce" data-aos="fade-up">
+				<p><strong><span class="counter">60,000,000 </span><span> tons</span></strong><br>of produce is thrown away in the United States annually.</p>
 				<p>That's 50% of all produce grown in the US ending up wasted. You don't have to be a statistic.</p>
 				
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/fWItr7NCnBA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 			</div>
 
-			<div class="tip save">
-				<p><strong><span class="counter">666 </span><span> tons</span></strong><br>of single use plastic are used every year</p>
-				<p>That's *************</p>
+			<div class="tip save" data-aos="fade-up">
+				<p><strong><span>$</span><span class="counter">160,000,000</span></strong><br>of produce is wasted in the US annually</p>
+				<p>Did you know that people tend to value food less once they put it in the fridge? Keep your food in mind by keeping it in sight.</p>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/mG9xYVyAnuc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 			</div>
 
-			<div class="tip expiration">
-				<p><strong><span class="two-line counter">160,000,000</span><span class="two-line"> pounds</span></strong><br></p>
-				<p class="lead">of food are wasted in the US annually. </p>
-				<p>Did you know that there are no federal regulations on expiration food (except for baby food)? <br>Many foods are good weeks, months, or even years  after the date printed on the label and foods stored improperly can spoil long BEFORE the date on the label. It's best to actually inspect foods for spoilage and not rely on the date.</p>
+			<div class="tip expiration" data-aos="fade-up">
+				<p><strong><span>$</span<span class= counter>1,560</span></strong><br></p>
+				<p class="lead">cost of wasted food for an American family of four. </p>
+				<p>Did you know that there are no federal regulations on expiration food (except for baby food)? <br><br>Many foods are good weeks, months, or even years  after the date printed on the label and foods stored improperly can spoil long BEFORE the date on the label. It's best to actually inspect foods for spoilage and not rely on the date.</p>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/Z1rZAT2GtmI" frameborder="0" allowfullscreen></iframe>
 			</div>
 
@@ -112,8 +129,8 @@
 			</div><!-- End paper-towels -->
 
 			<div class="tip straws">
-				<p><strong><span class="counter">666 </span><span> tons</span></strong><br>of single use plastic are used every year</p>
-				<p>That's *************</p>
+				<p><strong><span class="counter">500,000,000</span><span> straws</span></strong><br>used daily in the US.</p>
+				<p>That's enough to fill Yankee Stadium nine times per year. <br>This tip is pretty simple: just say no to straws.</p>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/uvGLSB9HDKE" frameborder="0" allowfullscreen></iframe>
 			</div>
 			<div class="tip bags">
@@ -124,8 +141,8 @@
 			</div>
 
 			<div class="tip bottles">
-				<p><strong><span class="counter">666 </span><span> tons</span></strong><br>of single use plastic are used every year</p>
-				<p>That's *************</p>
+				<p><strong><span class="counter">50,000,000</span><span> bottles</span></strong><br>are used by Americans annually.</p>
+				<p>This can be easily curbed by using reusable ones.</p>
 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/_6xlNyWPpB8" frameborder="0" allowfullscreen></iframe>
 			</div>
@@ -138,8 +155,8 @@
 			</div>
 
 			<div class="tip shipping">
-				<p><strong><span class="counter">666 </span><span> tons</span></strong><br>of single use plastic are used every year</p>
-				<p>That's *************</p>
+				<p><strong><span class="counter">100,000</span><span> metric tons</span></strong><br>of carbon dioxide saved by encouraging UPS drivers to take fewer left turns.</p>
+				<p>More driving and idling mean more carbon dioxide pollution. If fewer left turns saved that much CO2 from being released, imagine how much could be saved by less driving from more efficient shipping practices. <br>Slower-shipping allows for shippers to pack more stuff into fewer vehicles thus being efficient.</p>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/5HOijUtExiM" frameborder="0" allowfullscreen></iframe>
 			</div>
 <!-- 			<div class="tip rugs">
@@ -148,8 +165,10 @@
 				<p>Get a rug. Carpets and rugs keep your house warm and your thermostat low</p>
 			</div> -->
 			<div class="tip diapers">
-				<p><strong><span class="counter">666 </span><span> tons</span></strong><br>of single use plastic are used every year</p>
-				<p>That's *************</p>
+				<p><strong><span class="counter">100</span><span> billion bags</span></strong><br>are used by Americans yearly.</p>
+				<p>Fun fact: When a bag fee of $.10 is used only 16% will take it. When it's free, 75% of people will take it. This fee is a subtle reminder to bring their own bags.</p>
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/BxKfpt70rLI?start=132" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div> <!-- row -->
@@ -162,7 +181,7 @@
       <div class="col-sm-12">
           <div class="container">
               <div class="row">
-                  <div id="final-blurb"class="col-sm-12">
+                  <div id="final-blurb" class="col-sm-12">
                     <blockquote class="blockquote">
  						<p class="mb-0">Let us be good stewards of the Earth we inherited. All of us have to share the Earth's fragile ecosystems and precious resources, and each of us has a role to play in preserving them. If we are to go on living together on this earth, we must all be responsible for it.</p>
 						<footer class="blockquote-footer">Kofi Annon<cite title="Kofi Annon"></cite></footer>
@@ -180,11 +199,15 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
-<!-- CounterUp.js -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js'></script>
-<script src="js/counterUp.js"></script>
+<!-- CountUp -->
+<!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.countup.js"></script>
+<script>
+$('.counter').countUp();
+</script>
 
+<script src="js/aos.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>
